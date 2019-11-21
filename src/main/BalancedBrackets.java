@@ -37,26 +37,6 @@ public class BalancedBrackets {
         return brackets == 0;
     }
 
-    //index of ] must be after index of [
-    //set index of each to a variable to compare in else if
-
-
-
-//    public static boolean hasBalancedBrackets(String str) {
-//        int brackets = 0;
-//
-//        for (char ch : str.toCharArray()) {
-//           // int leftBracketIndex =
-//            if (ch == '[' || ch == ']') {
-//         //       brackets++;
-//          //  } else if (ch == ']') {
-//                brackets--;
-//            }
-//        }
-//        return brackets == 0;
-//    }
-
-
 
     // original unedited code
 //    public static boolean hasBalancedBrackets(String str) {
