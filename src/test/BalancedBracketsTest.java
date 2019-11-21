@@ -83,4 +83,9 @@ public class BalancedBracketsTest {
         assertFalse(test_Class.hasBalancedBrackets("[[]"));
     }
 
+    @Test
+    public void secondBracketSetOutOfOrderReturnsFalse() {
+        assertFalse(test_Class.hasBalancedBrackets("[Launch]]Code["));
+    }
+
 }
