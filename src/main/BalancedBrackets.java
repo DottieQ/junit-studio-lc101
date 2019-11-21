@@ -21,15 +21,53 @@ public class BalancedBrackets {
      * @param str - to be validated
      * @return true if balanced, false otherwise
      */
+
+
     public static boolean hasBalancedBrackets(String str) {
         int brackets = 0;
         for (char ch : str.toCharArray()) {
+            int leftBracketIndex = str.indexOf('[');
+            int rightBracketIndex = str.indexOf(']');
             if (ch == '[') {
                 brackets++;
-            } else if (ch == ']') {
+            } else if (ch == ']' && leftBracketIndex < rightBracketIndex) {
                 brackets--;
             }
         }
         return brackets == 0;
     }
+
+    //index of ] must be after index of [
+    //set index of each to a variable to compare in else if
+
+
+
+//    public static boolean hasBalancedBrackets(String str) {
+//        int brackets = 0;
+//
+//        for (char ch : str.toCharArray()) {
+//           // int leftBracketIndex =
+//            if (ch == '[' || ch == ']') {
+//         //       brackets++;
+//          //  } else if (ch == ']') {
+//                brackets--;
+//            }
+//        }
+//        return brackets == 0;
+//    }
+
+
+
+    // original unedited code
+//    public static boolean hasBalancedBrackets(String str) {
+//        int brackets = 0;
+//        for (char ch : str.toCharArray()) {
+//            if (ch == '[') {
+//                brackets++;
+//            } else if (ch == ']') {
+//                brackets--;
+//            }
+//        }
+//        return brackets == 0;
+//    }
 }
